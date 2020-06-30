@@ -31,13 +31,14 @@ class ContactController extends AbstractController
              //Récupération des données soumisent
              $contact = $form->getData(); 
  
+             
              //Création de l'oblet mail
              $messageMailer = (new \Swift_Message($contact['object'])) 
 
 
                 
                  ->setFrom($contact['email'])
-                 ->setTo('manduel21@gmail.com')
+                 ->setTo('nadkombang@gmail.com')
                  ->setReplyTo($contact['email'])
                  ->setBody($contact['message'])
              ;
